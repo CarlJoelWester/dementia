@@ -11,7 +11,7 @@ const systemMessage = {
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "Hi there! I'm an AI chatbot created to help you get ready for your doctor's appointment.\n\nMy specialties include:\n1- Helping you accurately recall and track pain episodes.\n2- Assist in clearly articulating your pain for a better diagnosis.\n3- Informing you about various treatment options.\n\nWhich of these three should we start with to feel more prepared for your upcoming doctor's visit?",
+      message: "Hi there! My name is Mary. Today, we're baking a lemon cheesecake! Where do we start?",
       sentTime: "just now",
       sender: "ChatGPT"
     }
