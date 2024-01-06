@@ -13,7 +13,7 @@ function App() {
     {
       message: "Hi there! My name is Mary. Today, we're baking a lemon cheesecake! Where do we start?",
       sentTime: "just now",
-      sender: "ChatGPT"
+      sender: "Mary"
     }
   ]);
   const [isTyping, setIsTyping] = useState(false);
