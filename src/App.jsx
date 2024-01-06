@@ -13,7 +13,7 @@ function App() {
     {
       message: "Hi there! My name is Mary. Today, we're baking a lemon cheesecake! Where do we start?",
       sentTime: "just now",
-      sender: "Mary"
+      sender: "ChatGPT"
     }
   ]);
   const [isTyping, setIsTyping] = useState(false);
@@ -88,7 +88,7 @@ function App() {
           <ChatContainer>       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="ChatGPT is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="Mary is typing" /> : null}
             >
               {messages.map((message, i) => {
                 return <Message key={i} model={message} />
