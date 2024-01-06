@@ -1,2 +1,0 @@
-# dementia
-dementia_test
