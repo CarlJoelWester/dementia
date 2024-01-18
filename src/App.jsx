@@ -93,7 +93,7 @@ function App() {
               typingIndicator={isTyping ? <TypingIndicator content=" " /> : null}
             >
               {messages.map((message, i) => {
-                return <Message key={i} model={message}, sentTime: message.sentTime />
+                return <Message key={i} model={message, sentTime: message.sentTime} />
               })}
             </MessageList>
             <MessageInput placeholder="Type message here" onSend={handleSend} attachButton={false} />        
