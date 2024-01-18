@@ -17,7 +17,7 @@ function App() {
     }
   ]);
   const [isTyping, setIsTyping] = useState(false);
-  const [timerSet, setTimerSet] = usestate(false);
+  const [timerSet, setTimerSet] = useState(false);
 
   const handleSend = async (message) => {
     const newMessage = {
