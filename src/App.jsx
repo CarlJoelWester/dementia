@@ -33,6 +33,7 @@ function App() {
     // How it responds, how it talks, etc.
     setIsTyping(true);
     await processMessageToChatGPT(newMessages);
+    setTimeout(() => alert('Time is up'), 5000)
   };
 
   async function processMessageToChatGPT(chatMessages) { // messages is an array of messages
