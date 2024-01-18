@@ -22,8 +22,7 @@ function App() {
     const newMessage = {
       message,
       direction: 'outgoing',
-      sender: "user",
-      sentTime: new Date().toLocaleTimeString() // Add current time as sentTime
+      sender: "user"
     };
 
     const newMessages = [...messages, newMessage];
@@ -76,8 +75,7 @@ function App() {
     }).then((data) => {
       setMessages([...chatMessages, {
         message: data.choices[0].message.content,
-        sender: "ChatGPT",
-        sentTime: new Date().toLocaleTimeString() // Add current time as sentTime
+        sender: "ChatGPT"
       }]);
       setIsTyping(false);
     });
@@ -93,7 +91,7 @@ function App() {
               typingIndicator={isTyping ? <TypingIndicator content=" " /> : null}
             >
               {messages.map((message, i) => {
-                return <Message key={i} model={message, sentTime: message.sentTime} />
+                return <Message key={i} model={message} />
               })}
             </MessageList>
             <MessageInput placeholder="Type message here" onSend={handleSend} attachButton={false} />        
@@ -104,4 +102,3 @@ function App() {
   )
 }
 export default App
-
