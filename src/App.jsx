@@ -17,6 +17,7 @@ function App() {
     }
   ]);
   const [isTyping, setIsTyping] = useState(false);
+  const [timerSet, setTimerSet] = usestate(false);
 
   const handleSend = async (message) => {
     const newMessage = {
@@ -33,7 +34,10 @@ function App() {
     // How it responds, how it talks, etc.
     setIsTyping(true);
     await processMessageToChatGPT(newMessages);
-    setTimeout(() => alert('Time is up'), 5000)
+    if(!timerSet) {
+      setTimeout(() => alert('Time is up'), 5000);
+      setTimerSet(true);
+    }
   };
 
   async function processMessageToChatGPT(chatMessages) { // messages is an array of messages
