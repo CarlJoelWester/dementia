@@ -88,7 +88,7 @@ function App() {
           <ChatContainer>       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="..." /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content=" " /> : null}
             >
               {messages.map((message, i) => {
                 return <Message key={i} model={message} />
