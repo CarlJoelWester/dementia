@@ -21,7 +21,7 @@ const systemMessage = {
 
   const handleSend = async (message) => {
     if(!timerId) {
-      timerId = setTimeout(() => alert('Time is up. Copy this code: QWERTY2024 - close this window, and return to the survey.'), 300000);
+      timerId = setTimeout(() => alert('Time is up. Copy this code: QWERTY2024 - close this window, and return to the survey.'), 240000);
     }
     const newMessage = {
       message,
